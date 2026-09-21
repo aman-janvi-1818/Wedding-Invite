@@ -615,3 +615,70 @@ section{position:relative}.story,.events,.family,.gallery,.venue,.countdown{padd
     background-position: center center !important;
   }
 }
+/* RESTORE JANVI-STYLE COLLAGE GRID */
+
+@media (max-width: 700px) {
+
+  .gallery-grid {
+    width: 100% !important;
+    max-width: 100% !important;
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    grid-auto-rows: 150px !important;
+    gap: 8px !important;
+    overflow: hidden !important;
+  }
+
+  .gallery-grid .g {
+    width: 100% !important;
+    min-width: 0 !important;
+    grid-column: span 1 !important;
+    grid-row: span 2 !important;
+    margin: 0 !important;
+    overflow: hidden !important;
+  }
+
+  .gallery-grid .g1,
+  .gallery-grid .g4,
+  .gallery-grid .g7,
+  .gallery-grid .g10 {
+    grid-row: span 3 !important;
+  }
+
+  .gallery-grid .g10 {
+    grid-column: span 2 !important;
+  }
+
+  .gallery-grid .g img {
+    width: 100% !important;
+    height: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    display: block !important;
+    object-fit: cover !important;
+  }
+}
+
+/* Keep the collage on small iPhones too */
+@media (max-width: 430px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    grid-auto-rows: 150px !important;
+  }
+
+  .gallery-grid .g {
+    grid-column: span 1 !important;
+    grid-row: span 2 !important;
+  }
+
+  .gallery-grid .g1,
+  .gallery-grid .g4,
+  .gallery-grid .g7 {
+    grid-row: span 3 !important;
+  }
+
+  .gallery-grid .g10 {
+    grid-column: span 2 !important;
+    grid-row: span 3 !important;
+  }
+}
