@@ -565,7 +565,7 @@ section{position:relative}.story,.events,.family,.gallery,.venue,.countdown{padd
   z-index: 0 !important;
   opacity: 1 !important;
 
-  background-image: url("journey-10.webp") !important;
+  background-image: url("journey-08.webp") !important;
   background-size: cover !important;
   background-position: center center !important;
   background-repeat: no-repeat !important;
@@ -584,7 +584,7 @@ section{position:relative}.story,.events,.family,.gallery,.venue,.countdown{padd
 
 @media (max-width: 900px) {
   .closing__photo {
-    background-image: url("journey-10.webp") !important;
+    background-image: url("journey-08.webp") !important;
     background-size: cover !important;
     background-position: center center !important;
   }
