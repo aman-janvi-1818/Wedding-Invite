@@ -514,3 +514,38 @@ section{position:relative}.story,.events,.family,.gallery,.venue,.countdown{padd
     grid-row:span 3 !important;
   }
 }
+/* FINAL HERO FIX */
+
+.hero__photo {
+  position: absolute !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  z-index: 0 !important;
+  opacity: 1 !important;
+  display: block !important;
+
+  background-image: url("hero-reference.png") !important;
+  background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+}
+
+.hero__veil {
+  position: absolute !important;
+  inset: 0 !important;
+  z-index: 1 !important;
+}
+
+.hero__content {
+  position: relative !important;
+  z-index: 2 !important;
+}
+
+@media (max-width: 900px) {
+  .hero__photo {
+    background-image: url("hero-reference.png") !important;
+    background-size: cover !important;
+    background-position: center center !important;
+  }
+}
