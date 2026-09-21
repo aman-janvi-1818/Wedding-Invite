@@ -546,7 +546,13 @@ section{position:relative}.story,.events,.family,.gallery,.venue,.countdown{padd
   .hero__photo {
     background-image: url("hero-reference.png") !important;
     background-size: cover !important;
-    background-position: center center !important;
+    background-position: 82% center !important;
+  }
+}
+
+@media (max-width: 390px) {
+  .hero__photo {
+    background-position: 86% center !important;
   }
 }
 /* FINAL CLOSING IMAGE FIX */
