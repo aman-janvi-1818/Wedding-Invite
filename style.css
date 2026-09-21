@@ -431,7 +431,7 @@ section{position:relative}.story,.events,.family,.gallery,.venue,.countdown{padd
 
 /* The final supplied photo is also used by the closing image. */
 .closing__photo{
-  background-image:url("journey-10.webp") !important;
+  background-image:url("journey-08.webp") !important;
   background-size:cover !important;
   background-repeat:no-repeat !important;
 }
