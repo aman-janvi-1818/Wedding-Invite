@@ -425,7 +425,7 @@ section{position:relative}.story,.events,.family,.gallery,.venue,.countdown{padd
    ========================================================= */
 /* Keep the supplied hero artwork exactly as the hero asset. */
 .hero__photo{
-  background-image:url("assets/images/hero-reference.png") !important;
+  background-image:url("hero-reference.png") !important;
   background-repeat:no-repeat !important;
 }
 
