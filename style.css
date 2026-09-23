@@ -682,3 +682,96 @@ section{position:relative}.story,.events,.family,.gallery,.venue,.countdown{padd
     grid-row: span 3 !important;
   }
 }
+/* DRESS CODE - SAME AS JANVI INVITE */
+
+.dress-code {
+  padding: 35px 24px 35px;
+  text-align: center;
+}
+
+.dress-code-card {
+  position: relative;
+  width: min(100%, 900px);
+  margin: 45px auto 0;
+  overflow: hidden;
+  border-radius: 18px;
+  background: #071f1a;
+}
+
+.dress-code-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  opacity: 1;
+  filter: blur(18px);
+  transform: scale(1.04);
+  transition:
+    filter 0.9s ease,
+    transform 0.9s ease;
+}
+
+.dress-code-card.revealed img {
+  filter: blur(0);
+  transform: scale(1);
+}
+
+.dress-code-blur {
+  position: absolute;
+  inset: 0;
+  background: rgba(6,19,15,.12);
+  pointer-events: none;
+  transition: opacity 0.7s ease;
+}
+
+.dress-code-card.revealed .dress-code-blur {
+  opacity: 0;
+}
+
+.dress-code-button {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 16px 28px;
+  border: 1px solid rgba(224,190,125,.75);
+  border-radius: 999px;
+  background: rgba(6,31,26,.88);
+  color: #f4dfb0;
+  font-family: inherit;
+  font-size: 15px;
+  letter-spacing: .08em;
+  cursor: pointer;
+  backdrop-filter: blur(8px);
+  transition:
+    opacity .4s ease,
+    transform .4s ease,
+    background .3s ease;
+}
+
+.dress-code-button:hover {
+  background: rgba(6,31,26,.96);
+}
+
+.dress-code-card.revealed .dress-code-button {
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%) scale(.92);
+}
+
+@media(max-width:700px) {
+  .dress-code {
+    padding: 35px 8px 35px;
+  }
+
+  .dress-code-card {
+    width: 100%;
+    margin-top: 25px;
+    border-radius: 10px;
+  }
+
+  .dress-code-button {
+    padding: 14px 20px;
+    font-size: 13px;
+    white-space: nowrap;
+  }
+}
